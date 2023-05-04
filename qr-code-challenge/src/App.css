@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap');
+
+:root {
+  --primaryBgClr: hsl(213.6deg 43.86% 88.82%);
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main-card-container {
+  height: 100dvh;
+  width: 100dvw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--primaryBgClr);
+  font-family: 'Poppins', sans-serif;
+}
+
+.main-card {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 2fr repeat(3, 1fr);
+  justify-items: center;
+  text-align: center;
+  align-items: center;
+  height: 500px;
+  aspect-ratio: 9/14;
+  color: black;
+  background-color: white;
+  border-radius: 25px;
+  padding: 1em;
+  gap: 20px;
+}
+
+.main-card .qr-code-img {
+  grid-row: 1 / span 2;
+  height: 100%;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: 10px;
+  
+}
+
+  h2 {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 90%;
+    grid-row: 3 / span 1;
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
+  p {
+    display: flex;
+    align-items: flex-start;
+    grid-row: 4 / span 1;
+    height: 100%;
+    width: 90%;
+    font-size: .9em;
+    font-weight: 500;
+    color: grey;
+}
